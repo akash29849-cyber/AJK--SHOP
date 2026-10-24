@@ -289,12 +289,6 @@ $("#oadd").onclick=async()=>{const p=P.find(x=>x.id==$("#op").value),n=$("#on").
 $("#wasave").onclick=()=>{wr("ajk-wa",$("#wan").value.trim());toast("Saved")};
 $("#logout").onclick=()=>{try{localStorage.removeItem("ajk-profile")}catch(e){}authed=false;$("#fn").value=$("#fp").value=$("#fa").value="";drawProf();toast("Logged out")};
 home();badge();loadP();
-  
-ADMIN_USERNAME=admin
-ADMIN_PASSWORD=ChangeThisToAStrongPassword123!
-SESSION_SECRET=replace-with-a-long-random-secret-at-least-32-characters
-PORT=3000
-
 </script>
 </body>
 </html>
